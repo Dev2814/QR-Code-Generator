@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>QR GENERATOR</title>
+    <link rel="stylesheet" href="DYNAMIC QR GENERATOR.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>QR CODE GENERATOR</h2>
+
+        <div class="form-group">
+            <div class="form-control">
+                <label>Enter Your Text or URL</label>
+                <input type="text" id="qrText" onkeyup="generateQRCode()">
+            </div>
+            <div class="form-control">
+                <label>Background Color</label>
+                <input type="color" id="colorLight" value="#ffffff" onchange="generateQRCode()">
+            </div>
+            <div class="form-control">
+                <label>Foreground Color</label>
+                <input type="color" id="colorDark" value="#000000" onchange="generateQRCode()">
+            </div>
+        </div>
+
+        <div class="qrCodeView"></div>
+
+    </div>
+
+    <script src="DYNAMIC QR GENERATOR.js"></script>
+</body>
+</html>
