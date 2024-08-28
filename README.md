@@ -80,3 +80,8 @@ The JavaScript file handles:
 
 Feel free to contribute to this project by submitting issues or pull requests!
 
+## Files
+
+- `DYNAMIC QR GENERATOR.html` - The main HTML file that structures the webpage.
+- `DYNAMIC QR GENERATOR.css` - The CSS file that styles the webpage.
+- `DYNAMIC QR GENERATOR.js` - The JavaScript file that handles QR code generation and validation.
