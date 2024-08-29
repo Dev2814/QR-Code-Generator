@@ -6,19 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function generateQRCode() {
         if (qrText.value.trim() === "") {
-            qrCodeView.classList.remove("visible"); // Hide the QR code view
+            qrCodeView.classList.remove("visible"); 
             return;
         }
 
-        qrCodeView.innerHTML = ""; // Clear any existing QR code
-
+        qrCodeView.innerHTML = "";
         new QRCode(qrCodeView, {
             text: qrText.value,
             colorLight: colorLight.value,
             colorDark: colorDark.value
         });
 
-        qrCodeView.classList.add("visible"); // Show the QR code view with border
+        qrCodeView.classList.add("visible");
     }
 
     window.generateQRCode = generateQRCode;
